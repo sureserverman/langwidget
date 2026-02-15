@@ -1,4 +1,4 @@
-Package: kbd-layout-indicator
+Package: langwidget
 Version: 1.8.3
 Section: utils
 Priority: optional
