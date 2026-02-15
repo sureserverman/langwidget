@@ -1,0 +1,16 @@
+[Unit]
+Description=Keyboard Layout Indicator (Wayland tray)
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/kbd-layout-indicator
+Restart=on-failure
+RestartSec=3
+
+# Ensure Wayland and D-Bus are available
+Environment=QT_QPA_PLATFORM=wayland
+
+[Install]
+WantedBy=graphical-session.target

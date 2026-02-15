@@ -1,0 +1,24 @@
+#!/bin/bash
+set -e
+
+case "$1" in
+    configure)
+        # Ensure the launcher is executable
+        chmod 755 /usr/bin/kbd-layout-indicator
+
+        # Ensure the Python entry point is executable
+        chmod 755 /usr/share/kbd-layout-indicator/__main__.py
+        ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+        ;;
+
+    *)
+        echo "postinst called with unknown argument '$1'" >&2
+        exit 1
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0

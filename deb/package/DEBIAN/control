@@ -1,0 +1,24 @@
+Package: kbd-layout-indicator
+Version: 0.1.0-1
+Section: utils
+Priority: optional
+Architecture: all
+Depends: python3 (>= 3.10),
+         python3-pyqt5,
+         qtwayland5,
+         libxkbcommon0
+Recommends: fonts-dejavu-core
+Maintainer: Whonix developers <whonix-devel@whonix.org>
+Homepage: https://www.whonix.org
+Description: Keyboard layout indicator for LXQt on Wayland (labwc)
+ A lightweight keyboard layout indicator that displays the current
+ keyboard layout as a short label (EN, DE, etc.) in the LXQt system
+ tray. Designed for Wayland-only environments, specifically
+ Whonix 18 with the labwc compositor.
+ .
+ Features:
+  - Pure Python implementation (no compiled components)
+  - Wayland-native (no XWayland required)
+  - Uses StatusNotifierItem (SNI) via Qt for LXQt panel integration
+  - Configurable layout-to-label mapping via JSON
+  - XDG autostart and optional systemd user service

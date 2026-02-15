@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Keyboard Layout Indicator
+Comment=Shows current keyboard layout in the system tray
+Exec=/usr/bin/kbd-layout-indicator
+Icon=input-keyboard
+Terminal=false
+Categories=Utility;
+X-LXQt-Need-Tray=true
+OnlyShowIn=LXQt;
