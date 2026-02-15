@@ -1,5 +1,5 @@
 Package: kbd-layout-indicator
-Version: 0.1.0-1
+Version: 1.8.3
 Section: utils
 Priority: optional
 Architecture: all
