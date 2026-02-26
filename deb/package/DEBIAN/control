@@ -22,3 +22,4 @@ Description: Keyboard layout indicator for LXQt on Wayland (labwc)
   - Uses StatusNotifierItem (SNI) via Qt for LXQt panel integration
   - Configurable layout-to-label mapping via JSON
   - XDG autostart and optional systemd user service
+Source: langwidget
